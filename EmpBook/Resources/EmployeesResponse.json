@@ -1,0 +1,61 @@
+{
+    "count": 3,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 3,
+            "first_name": "PQR",
+            "last_name": "Doe",
+            "email": "john@IBM.com",
+            "dob": "1998-08-09",
+            "hire_date": "1987-09-08",
+            "address": "delhi",
+            "city": "gurgaon",
+            "zip_code": "110012",
+            "country": "India",
+            "phone": "9479759579",
+            "photo": null,
+            "salary": "50000.00",
+            "designation": "technical officer",
+            "organization_name": "IBM",
+            "status": "Active"
+        },
+        {
+            "id": 5,
+            "first_name": "ABC",
+            "last_name": "root",
+            "email": "joeroot@gmail.com",
+            "dob": "1980-10-10",
+            "hire_date": "2021-10-10",
+            "address": "England",
+            "city": "london",
+            "zip_code": "4000112",
+            "country": "England",
+            "phone": "8329839939",
+            "photo": null,
+            "salary": "110000.00",
+            "designation": "Batsman",
+            "organization_name": "ECB",
+            "status": "Active"
+        },
+        {
+            "id": 6,
+            "first_name": "Carry",
+            "last_name": "root",
+            "email": "joeroot@gmail.com",
+            "dob": "1980-10-10",
+            "hire_date": "2021-10-10",
+            "address": "England",
+            "city": "london",
+            "zip_code": "4000112",
+            "country": "England",
+            "phone": "8329839939",
+            "photo": null,
+            "salary": "200000.00",
+            "designation": "Batsman",
+            "organization_name": "ECB",
+            "status": "Active"
+        }
+    ]
+}
