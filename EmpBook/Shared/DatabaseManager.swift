@@ -29,7 +29,18 @@ final class DatabaseManager: StorageProtocol {
     var refreshToken: String?
     var accessToken: String?
     
+    
+    private func loadAccessToken() throws {
+        //load access token in memory
+        let request = LoginResponseMO.fetchRequest()
+        request.returnsObjectsAsFaults = false
+        let response = try context.fetch(request)
+        self.accessToken = response.first?.accessToken
+    }
+    
     func isUserLoggedIn() throws -> Bool {
+        try loadAccessToken()
+        
         let request = UserMO.fetchRequest()
         request.returnsObjectsAsFaults = false
         let users = try context.fetch(request)

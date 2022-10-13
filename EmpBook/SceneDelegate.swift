@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func getInitialViewController() -> UIViewController {
         do {
             if try DatabaseManager.shared.isUserLoggedIn() {
+                
                 guard let dashboardViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: DashboardViewController.self)) as? DashboardViewController else { return UIViewController() }
                 let rootVC = UINavigationController(rootViewController: dashboardViewController)
                 return rootVC
